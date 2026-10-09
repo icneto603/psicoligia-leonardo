@@ -23,6 +23,11 @@
   margin: 0 auto var(--space-xl);
 }
 
+.section-header--left {
+  text-align: left;
+  margin-bottom: var(--space-sm);
+}
+
 .section-header__subtitle {
   font-size: 0.875rem;
   font-weight: 600;

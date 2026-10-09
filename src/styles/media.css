@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
   }
 
-  .hero__image, 
+  .hero__image,
   .about__image {
     height: 360px;
   }

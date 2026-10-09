@@ -1,4 +1,4 @@
-/* Componente: Button */
+/* Botões */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -49,7 +49,7 @@
   width: 100%;
 }
 
-/* Componente: Navbar */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -140,7 +140,7 @@
   color: var(--color-neutral-800);
 }
 
-/* Componente: Hero */
+/* Hero Section */
 .hero {
   padding-top: 140px;
   padding-bottom: var(--space-xl);
@@ -225,7 +225,12 @@
   font-size: 1.2rem;
 }
 
-/* Componente: About */
+.hero__floating-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-neutral-600);
+}
+
+/* About Section */
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -265,7 +270,7 @@
   color: var(--color-primary-600);
 }
 
-/* Componente: Card Service & Grid */
+/* Services / Especialidades */
 .services__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -315,7 +320,7 @@
   margin-bottom: var(--space-md);
 }
 
-/* Componente: Modalities */
+/* Modalidades */
 .modalities__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -400,7 +405,7 @@
   color: var(--color-primary-600);
 }
 
-/* Componente: Process */
+/* Processo / Passo a Passo */
 .process__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -435,7 +440,7 @@
   color: var(--color-neutral-600);
 }
 
-/* Componente: FAQ Accordion */
+/* FAQ Accordion */
 .faq__container {
   max-width: 800px;
   margin: 0 auto;
@@ -485,7 +490,7 @@
   padding-bottom: 1.25rem;
 }
 
-/* Componente: Form & Contact */
+/* Contato e Formulário */
 .contact__grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -501,6 +506,11 @@
   font-family: var(--font-heading);
   font-size: 1.75rem;
   margin-bottom: var(--space-sm);
+}
+
+.contact__description {
+  color: var(--color-neutral-600);
+  margin-bottom: 1.5rem;
 }
 
 .contact__details {
@@ -525,6 +535,11 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.contact__item-text {
+  font-size: 0.9rem;
+  color: var(--color-neutral-600);
 }
 
 .form-group {
@@ -566,7 +581,7 @@
   min-height: 110px;
 }
 
-/* Componente: Footer */
+/* Footer */
 .footer {
   background-color: var(--color-neutral-900);
   color: var(--color-neutral-200);
@@ -586,6 +601,10 @@
 .footer__brand {
   font-family: var(--font-heading);
   font-size: 1.25rem;
+}
+
+.footer__crp {
+  font-size: 0.9rem;
 }
 
 .footer__legal {

@@ -17,7 +17,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- SweetAlert2 CSS & JS -->
+  <!-- SweetAlert2 JS & Script Principal -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
   <script src="./src/js/main.js" defer></script>
 </head>
@@ -39,22 +39,24 @@
         <i class="fa-solid fa-bars" id="menuIcon"></i>
       </button>
 
-      <ul class="navbar__menu" id="navMenu">
-        <li><a href="#sobre" class="navbar__link">Sobre</a></li>
-        <li><a href="#especialidades" class="navbar__link">Especialidades</a></li>
-        <li><a href="#modalidades" class="navbar__link">Modalidades</a></li>
-        <li><a href="#como-funciona" class="navbar__link">Como Funciona</a></li>
-        <li><a href="#faq" class="navbar__link">Dúvidas</a></li>
-        <li class="navbar__auth">
-          <button class="btn btn--outline-neutral" onclick="abrirModalLogin()">
-            <i class="fa-solid fa-right-to-bracket"></i> Login
-          </button>
-          <button class="btn btn--secondary" onclick="abrirModalCadastro()">
-            <i class="fa-solid fa-user-plus"></i> Cadastro
-          </button>
-          <a href="#agendamento" class="btn btn--primary">Agendar</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="navbar__menu" id="navMenu">
+          <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+          <li><a href="#especialidades" class="navbar__link">Especialidades</a></li>
+          <li><a href="#modalidades" class="navbar__link">Modalidades</a></li>
+          <li><a href="#como-funciona" class="navbar__link">Como Funciona</a></li>
+          <li><a href="#faq" class="navbar__link">Dúvidas</a></li>
+          <li class="navbar__auth">
+            <button class="btn btn--outline-neutral" id="btnLogin">
+              <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+            <button class="btn btn--secondary" id="btnCadastro">
+              <i class="fa-solid fa-user-plus"></i> Cadastro
+            </button>
+            <a href="#agendamento" class="btn btn--primary">Agendar</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -85,7 +87,7 @@
             </div>
             <div>
               <strong>+10 Anos de Experiência</strong>
-              <p style="font-size: 0.8rem; color: var(--color-neutral-600);">Atendimentos Clínicos</p>
+              <p class="hero__floating-subtitle">Atendimentos Clínicos</p>
             </div>
           </div>
         </div>
@@ -98,10 +100,12 @@
           <img src="https://placehold.co/600x500/f0fdfa/0f766e?text=Consultorio+Araraquara" alt="Ambiente do consultório de psicologia em Araraquara" class="about__image">
         </div>
         <div class="about__text-block">
-          <span class="section-header__subtitle">Minha Trajetória</span>
-          <h2 class="section-header__title" style="text-align: left; margin-bottom: 1rem;">
-            Acredito na transformação por meio da escuta empática
-          </h2>
+          <header class="section-header section-header--left">
+            <span class="section-header__subtitle">Minha Trajetória</span>
+            <h2 class="section-header__title">
+              Acredito na transformação por meio da escuta empática
+            </h2>
+          </header>
           <p>
             Sou graduada no curso de Psicologia pela <strong>Universidade Federal de São Carlos (UFSCar)</strong> e mestre em <strong>Educação Especial</strong> pela mesma instituição.
           </p>
@@ -131,10 +135,10 @@
 
     <section class="section section--alt" id="especialidades">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <span class="section-header__subtitle">Áreas de Atuação</span>
           <h2 class="section-header__title">Como posso te ajudar hoje?</h2>
-        </div>
+        </header>
 
         <div class="services__grid">
           <article class="card-service">
@@ -145,7 +149,7 @@
             <p class="card-service__text">
               Técnicas para regulação emocional, manejo de crises de pânico e controle do estresse no dia a dia.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Ansiedade e Estresse')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Ansiedade e Estresse">Saiba Mais</button>
           </article>
 
           <article class="card-service">
@@ -156,7 +160,7 @@
             <p class="card-service__text">
               Ressignificação de pensamentos disfuncionais e fortalecimento do autocuidado e valor próprio.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Depressão e Autoestima')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Depressão e Autoestima">Saiba Mais</button>
           </article>
 
           <article class="card-service">
@@ -167,7 +171,7 @@
             <p class="card-service__text">
               Aprimoramento da comunicação assertiva, resolução de conflitos interpessoais e dependência emocional.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Relacionamentos')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Relacionamentos">Saiba Mais</button>
           </article>
 
           <article class="card-service">
@@ -178,7 +182,7 @@
             <p class="card-service__text">
               Sessões com total praticidade e sigilo, no conforto da sua casa, aprovadas pelo Conselho Federal de Psicologia.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Terapia Online')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Terapia Online">Saiba Mais</button>
           </article>
 
           <article class="card-service">
@@ -189,7 +193,7 @@
             <p class="card-service__text">
               Suporte psicológico e orientação embasados na experiência acadêmica de mestrado pela UFSCar.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Educação Especial e Inclusão')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Educação Especial e Inclusão">Saiba Mais</button>
           </article>
 
           <article class="card-service">
@@ -200,7 +204,7 @@
             <p class="card-service__text">
               Acolhimento empático no enfrentamento de perdas, transições marcantes de vida e desenvolvimento pessoal.
             </p>
-            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Autoconhecimento e Luto')">Saiba Mais</button>
+            <button class="btn btn--secondary card-service__action" data-service="Autoconhecimento e Luto">Saiba Mais</button>
           </article>
         </div>
       </div>
@@ -208,22 +212,22 @@
 
     <section class="section" id="modalidades">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <span class="section-header__subtitle">Formatos de Atendimento</span>
           <h2 class="section-header__title">Escolha a modalidade ideal para a sua rotina</h2>
-        </div>
+        </header>
 
         <div class="modalities__grid">
           <article class="modality-card">
             <span class="modality-card__badge">Araraquara - SP</span>
-            <div class="modality-card__header">
+            <header class="modality-card__header">
               <div class="modality-card__icon">
                 <i class="fa-solid fa-building-user"></i>
               </div>
               <h3 class="modality-card__title">Atendimento Presencial</h3>
-            </div>
+            </header>
             <p class="modality-card__text">
-              O atendimento presencial oferece um ambiente físico totalmente neutro, acolhedor e preparado exclusivamente para as suas sessões. É ideal para quem prefere a experiência do contato direto fora da sua rotina doméstica ou de trabalho, contando com a estrutura confortável do nosso consultório no centro de Araraquara.
+              O atendimento presencial oferece um ambiente físico totalmente neutro, acolhedor e preparado exclusivamente para as suas sessões no centro de Araraquara.
             </p>
             <ul class="modality-card__features">
               <li class="modality-card__feature-item">
@@ -240,14 +244,14 @@
 
           <article class="modality-card">
             <span class="modality-card__badge">Qualquer Lugar</span>
-            <div class="modality-card__header">
+            <header class="modality-card__header">
               <div class="modality-card__icon">
                 <i class="fa-solid fa-display"></i>
               </div>
               <h3 class="modality-card__title">Atendimento On-line</h3>
-            </div>
+            </header>
             <p class="modality-card__text">
-              A terapia on-line possui exatamente a mesma eficácia comprovada da modalidade presencial, unindo rigor ético e flexibilidade. É a escolha perfeita para quem busca otimizar o tempo, realiza viagens frequentes ou prefere passar pelo processo terapêutico no conforto do seu lar, utilizando uma sala de videochamada segura e criptografada.
+              A terapia on-line possui exatamente a mesma eficácia comprovada da modalidade presencial, unindo rigor ético, flexibilidade e privacidade.
             </p>
             <ul class="modality-card__features">
               <li class="modality-card__feature-item">
@@ -267,70 +271,70 @@
 
     <section class="section section--alt" id="como-funciona">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <span class="section-header__subtitle">Passo a Passo</span>
           <h2 class="section-header__title">Como funciona o processo terapêutico</h2>
-        </div>
+        </header>
 
         <div class="process__grid">
-          <div class="step-card">
+          <article class="step-card">
             <div class="step-card__number">01</div>
             <h3 class="step-card__title">Primeiro Contato</h3>
             <p class="step-card__text">Envie uma mensagem pelo formulário ou WhatsApp para tirar dúvidas e verificar horários disponíveis.</p>
-          </div>
+          </article>
 
-          <div class="step-card">
+          <article class="step-card">
             <div class="step-card__number">02</div>
             <h3 class="step-card__title">Sessão Inicial</h3>
             <p class="step-card__text">Alinhamos expectativas, avaliamos suas demandas principais e definimos a frequência dos encontros.</p>
-          </div>
+          </article>
 
-          <div class="step-card">
+          <article class="step-card">
             <div class="step-card__number">03</div>
             <h3 class="step-card__title">Acompanhamento</h3>
             <p class="step-card__text">Desenvolvimento de estratégias personalizadas com encontros semanais ou quinzenais.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="faq">
       <div class="container faq__container">
-        <div class="section-header">
+        <header class="section-header">
           <span class="section-header__subtitle">Perguntas Frequentes</span>
           <h2 class="section-header__title">Tire suas dúvidas antes de começar</h2>
-        </div>
+        </header>
 
         <div class="faq__list">
-          <div class="faq-item">
-            <button class="faq-item__header" onclick="toggleFaq(this)">
+          <article class="faq-item">
+            <button class="faq-item__header" aria-expanded="false">
               <span>Quanto tempo dura cada sessão de terapia?</span>
               <i class="fa-solid fa-chevron-down faq-item__icon"></i>
             </button>
             <div class="faq-item__content">
               Cada sessão individual tem duração média de 50 minutos, garantindo tempo hábil para aprofundar as questões trazidas.
             </div>
-          </div>
+          </article>
 
-          <div class="faq-item">
-            <button class="faq-item__header" onclick="toggleFaq(this)">
+          <article class="faq-item">
+            <button class="faq-item__header" aria-expanded="false">
               <span>Você atende por planos de saúde (convênio)?</span>
               <i class="fa-solid fa-chevron-down faq-item__icon"></i>
             </button>
             <div class="faq-item__content">
-              Os atendimentos são estritamente particulares. No entanto, forneço o recibo oficial contendo o registro no CRP para que você solicite o <strong>reembolso junto ao seu plano de saúde</strong>.
+              Os atendimentos são estritamente particulares. No entanto, forneço recibo oficial com registro no CRP para solicitação de <strong>reembolso junto ao seu plano de saúde</strong>.
             </div>
-          </div>
+          </article>
 
-          <div class="faq-item">
-            <button class="faq-item__header" onclick="toggleFaq(this)">
+          <article class="faq-item">
+            <button class="faq-item__header" aria-expanded="false">
               <span>A Terapia Online funciona da mesma forma que a Presencial?</span>
               <i class="fa-solid fa-chevron-down faq-item__icon"></i>
             </button>
             <div class="faq-item__content">
-              Sim! Estudos científicos comprovam que a eficácia é equivalente. As reuniões são realizadas por videochamada criptografada, bastando ter uma boa conexão e um local privativo.
+              Sim! Estudos comprovam eficácia equivalente. As sessões ocorrem por videochamada segura e criptografada.
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -339,9 +343,11 @@
       <div class="container">
         <div class="contact__grid">
           <div class="contact__info">
-            <span class="section-header__subtitle" style="text-align: left;">Contato & Localização</span>
-            <h2 class="contact__info-title">Pronto(a) para dar o próximo passo?</h2>
-            <p style="color: var(--color-neutral-600); margin-bottom: 1.5rem;">
+            <header class="section-header section-header--left">
+              <span class="section-header__subtitle">Contato & Localização</span>
+              <h2 class="contact__info-title">Pronto(a) para dar o próximo passo?</h2>
+            </header>
+            <p class="contact__description">
               Preencha o formulário ou entre em contato direto pelos canais abaixo para agendar o seu horário.
             </p>
 
@@ -352,7 +358,7 @@
                 </div>
                 <div>
                   <strong>Consultório Presencial</strong>
-                  <p style="font-size: 0.9rem; color: var(--color-neutral-600);">Rua São Bento, 1200 - Centro - Araraquara / SP</p>
+                  <p class="contact__item-text">Rua São Bento, 1200 - Centro - Araraquara / SP</p>
                 </div>
               </li>
               <li class="contact__item">
@@ -361,13 +367,12 @@
                 </div>
                 <div>
                   <strong>E-mail de Contato</strong>
-                  <p style="font-size: 0.9rem; color: var(--color-neutral-600);">contato@ligiacardoso.com.br</p>
+                  <p class="contact__item-text">contato@ligiacardoso.com.br</p>
                 </div>
               </li>
             </ul>
           </div>
 
-          <!-- Contact Form -->
           <form class="contact__form" id="bookingForm">
             <div class="form-group">
               <label for="nome" class="form-group__label">Nome Completo *</label>
@@ -412,7 +417,7 @@
         <div class="footer__brand">
           Lígia Cardoso Silveira Rosa | Psicologia Clínica
         </div>
-        <div style="font-size: 0.9rem;">
+        <div class="footer__crp">
           CRP: 06/73200
         </div>
       </div>
