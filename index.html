@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio Profissional de Psicologia Clínica com Lígia Cardoso Silveira Rosa em Araraquara-SP e On-line.">
+  <title>Lígia Cardoso Silveira Rosa | Psicologia Clínica & Psicoterapia</title>
+
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/global.css">
+  <link rel="stylesheet" href="./src/styles/media.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- SweetAlert2 CSS & JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="./src/js/sweet-alert.js" defer></script>
+
+
+  <style>
+    
+
+    
+
+   
+
+   
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="#" class="navbar__brand" aria-label="Página inicial Lígia Cardoso Silveira Rosa">
+        <div class="navbar__logo-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div>
+          <span class="navbar__title">Lígia Cardoso</span>
+          <span class="navbar__crp">CRP 06/73200</span>
+        </div>
+      </a>
+
+      <button class="navbar__toggle" id="menuToggle" aria-label="Abrir Menu de Navegação">
+        <i class="fa-solid fa-bars" id="menuIcon"></i>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#sobre" class="navbar__link">Sobre Mim</a></li>
+        <li><a href="#especialidades" class="navbar__link">Especialidades</a></li>
+        <li><a href="#modalidades" class="navbar__link">Modalidades</a></li>
+        <li><a href="#como-funciona" class="navbar__link">Como Funciona</a></li>
+        <li><a href="#faq" class="navbar__link">Dúvidas</a></li>
+        <li class="navbar__auth">
+          <button class="btn btn--outline-neutral" onclick="abrirModalLogin()">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </button>
+          <button class="btn btn--secondary" onclick="abrirModalCadastro()">
+            <i class="fa-solid fa-user-plus"></i> Cadastro
+          </button>
+          <a href="#agendamento" class="btn btn--primary">Agendar</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__badge">
+            <i class="fa-regular fa-heart"></i> Atendimento Presencial & Online
+          </span>
+          <h1 class="hero__title">Um espaço seguro para redescobrir seu bem-estar emocional</h1>
+          <p class="hero__subtitle">
+            Psicoterapia baseada na Terapia Cognitivo-Comportamental (TCC). Acolhimento ético, humano e focado na sua evolução pessoal.
+          </p>
+          <div class="hero__actions">
+            <a href="#agendamento" class="btn btn--primary">
+              <i class="fa-brands fa-whatsapp"></i> Agendar Primeira Sessão
+            </a>
+            <a href="#sobre" class="btn btn--secondary">Conhecer a Psicóloga</a>
+          </div>
+        </div>
+
+        <div class="hero__image-card">
+          <img src="https://placehold.co/600x600/e0f2fe/0369a1?text=Ligia+Cardoso+Silveira+Rosa" alt="Retrato da psicóloga Lígia Cardoso Silveira Rosa" class="hero__image">
+          <div class="hero__floating-tag">
+            <div class="hero__floating-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div>
+              <strong>+10 Anos de Experiência</strong>
+              <p style="font-size: 0.8rem; color: var(--color-neutral-600);">Atendimentos Clínicos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about__grid">
+        <div>
+          <img src="https://placehold.co/600x500/f0fdfa/0f766e?text=Consultorio+Araraquara" alt="Ambiente do consultório de psicologia em Araraquara" class="about__image">
+        </div>
+        <div class="about__text-block">
+          <span class="section-header__subtitle">Sobre Mim</span>
+          <h2 class="section-header__title" style="text-align: left; margin-bottom: 1rem;">
+            Acredito na transformação por meio da escuta empática
+          </h2>
+          <p>
+            Sou graduada no curso de Psicologia pela <strong>Universidade Federal de São Carlos (UFSCar)</strong> e mestre em <strong>Educação Especial</strong> pela mesma instituição.
+          </p>
+          <p>
+            Com ampla formação acadêmica e prática, sou especializada na área <strong>Clínica</strong> e me especializei em <strong>Terapia Cognitivo-Comportamental (TCC)</strong>.
+          </p>
+          <p>
+            Meu trabalho consiste em oferecer um ambiente seguro e livre de julgamentos, ajudando você a desenvolver ferramentas práticas para lidar com ansiedade, estresse, desafios nos relacionamentos e autoconhecimento.
+          </p>
+          <div class="about__highlights">
+            <div class="about__highlight-item">
+              <i class="fa-solid fa-circle-check"></i> Graduação UFSCar
+            </div>
+            <div class="about__highlight-item">
+              <i class="fa-solid fa-circle-check"></i> Mestrado UFSCar
+            </div>
+            <div class="about__highlight-item">
+              <i class="fa-solid fa-circle-check"></i> Especialista em Clínica
+            </div>
+            <div class="about__highlight-item">
+              <i class="fa-solid fa-circle-check"></i> Especialização em TCC
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="especialidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Áreas de Atuação</span>
+          <h2 class="section-header__title">Como posso te ajudar hoje?</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <h3 class="card-service__title">Ansiedade e Estresse</h3>
+            <p class="card-service__text">
+              Técnicas para regulação emocional, manejo de crises de pânico e controle do estresse no dia a dia.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Ansiedade e Estresse')">Saiba Mais</button>
+          </article>
+
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-face-smile-beam"></i>
+            </div>
+            <h3 class="card-service__title">Depressão e Autoestima</h3>
+            <p class="card-service__text">
+              Ressignificação de pensamentos disfuncionais e fortalecimento do autocuidado e valor próprio.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Depressão e Autoestima')">Saiba Mais</button>
+          </article>
+
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-people-arrows"></i>
+            </div>
+            <h3 class="card-service__title">Relacionamentos</h3>
+            <p class="card-service__text">
+              Aprimoramento da comunicação assertiva, resolução de conflitos interpessoais e dependência emocional.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Relacionamentos')">Saiba Mais</button>
+          </article>
+
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-laptop-house"></i>
+            </div>
+            <h3 class="card-service__title">Terapia Online</h3>
+            <p class="card-service__text">
+              Sessões com total praticidade e sigilo, no conforto da sua casa, aprovadas pelo Conselho Federal de Psicologia.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Terapia Online')">Saiba Mais</button>
+          </article>
+
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="card-service__title">Educação Especial e Inclusão</h3>
+            <p class="card-service__text">
+              Suporte psicológico e orientação embasados na experiência acadêmica de mestrado pela UFSCar.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Educação Especial e Inclusão')">Saiba Mais</button>
+          </article>
+
+          <article class="card-service">
+            <div class="card-service__icon">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <h3 class="card-service__title">Autoconhecimento e Luto</h3>
+            <p class="card-service__text">
+              Acolhimento empático no enfrentamento de perdas, transições marcantes de vida e desenvolvimento pessoal.
+            </p>
+            <button class="btn btn--secondary card-service__action" onclick="solicitarInfo('Autoconhecimento e Luto')">Saiba Mais</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modalidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Formatos de Atendimento</span>
+          <h2 class="section-header__title">Escolha a modalidade ideal para a sua rotina</h2>
+        </div>
+
+        <div class="modalities__grid">
+          <article class="modality-card">
+            <span class="modality-card__badge">Araraquara - SP</span>
+            <div class="modality-card__header">
+              <div class="modality-card__icon">
+                <i class="fa-solid fa-building-user"></i>
+              </div>
+              <h3 class="modality-card__title">Atendimento Presencial</h3>
+            </div>
+            <p class="modality-card__text">
+              O atendimento presencial oferece um ambiente físico totalmente neutro, acolhedor e preparado exclusivamente para as suas sessões. É ideal para quem prefere a experiência do contato direto fora da sua rotina doméstica ou de trabalho, contando com a estrutura confortável do nosso consultório no centro de Araraquara.
+            </p>
+            <ul class="modality-card__features">
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Espaço físico reservado e climatizado
+              </li>
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Experiência imersiva e presença física
+              </li>
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Localização central com fácil acesso
+              </li>
+            </ul>
+          </article>
+
+          <article class="modality-card">
+            <span class="modality-card__badge">Qualquer Lugar</span>
+            <div class="modality-card__header">
+              <div class="modality-card__icon">
+                <i class="fa-solid fa-display"></i>
+              </div>
+              <h3 class="modality-card__title">Atendimento On-line</h3>
+            </div>
+            <p class="modality-card__text">
+              A terapia on-line possui exatamente a mesma eficácia comprovada da modalidade presencial, unindo rigor ético e flexibilidade. É a escolha perfeita para quem busca otimizar o tempo, realiza viagens frequentes ou prefere passar pelo processo terapêutico no conforto do seu lar, utilizando uma sala de videochamada segura e criptografada.
+            </p>
+            <ul class="modality-card__features">
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Praticidade e economia de deslocamento
+              </li>
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Plataforma segura conforme diretrizes do CFP
+              </li>
+              <li class="modality-card__feature-item">
+                <i class="fa-solid fa-check"></i> Flexibilidade de horários para a sua rotina
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Passo a Passo</span>
+          <h2 class="section-header__title">Como funciona o processo terapêutico</h2>
+        </div>
+
+        <div class="process__grid">
+          <div class="step-card">
+            <div class="step-card__number">01</div>
+            <h3 class="step-card__title">Primeiro Contato</h3>
+            <p class="step-card__text">Envie uma mensagem pelo formulário ou WhatsApp para tirar dúvidas e verificar horários disponíveis.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__number">02</div>
+            <h3 class="step-card__title">Sessão Inicial</h3>
+            <p class="step-card__text">Alinhamos expectativas, avaliamos suas demandas principais e definimos a frequência dos encontros.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__number">03</div>
+            <h3 class="step-card__title">Acompanhamento</h3>
+            <p class="step-card__text">Desenvolvimento de estratégias personalizadas com encontros semanais ou quinzenais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq__container">
+        <div class="section-header">
+          <span class="section-header__subtitle">Perguntas Frequentes</span>
+          <h2 class="section-header__title">Tire suas dúvidas antes de começar</h2>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq-item">
+            <button class="faq-item__header" onclick="toggleFaq(this)">
+              <span>Quanto tempo dura cada sessão de terapia?</span>
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </button>
+            <div class="faq-item__content">
+              Cada sessão individual tem duração média de 50 minutos, garantindo tempo hábil para aprofundar as questões trazidas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__header" onclick="toggleFaq(this)">
+              <span>Você atende por planos de saúde (convênio)?</span>
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </button>
+            <div class="faq-item__content">
+              Os atendimentos são estritamente particulares. No entanto, forneço o recibo oficial contendo o registro no CRP para que você solicite o <strong>reembolso junto ao seu plano de saúde</strong>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__header" onclick="toggleFaq(this)">
+              <span>A Terapia Online funciona da mesma forma que a Presencial?</span>
+              <i class="fa-solid fa-chevron-down faq-item__icon"></i>
+            </button>
+            <div class="faq-item__content">
+              Sim! Estudos científicos comprovam que a eficácia é equivalente. As reuniões são realizadas por videochamada criptografada, bastando ter uma boa conexão e um local privativo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="agendamento">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <span class="section-header__subtitle" style="text-align: left;">Contato & Localização</span>
+            <h2 class="contact__info-title">Pronto(a) para dar o próximo passo?</h2>
+            <p style="color: var(--color-neutral-600); margin-bottom: 1.5rem;">
+              Preencha o formulário ou entre em contato direto pelos canais abaixo para agendar o seu horário.
+            </p>
+
+            <ul class="contact__details">
+              <li class="contact__item">
+                <div class="contact__item-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong>Consultório Presencial</strong>
+                  <p style="font-size: 0.9rem; color: var(--color-neutral-600);">Rua São Bento, 1200 - Centro - Araraquara / SP</p>
+                </div>
+              </li>
+              <li class="contact__item">
+                <div class="contact__item-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <strong>E-mail de Contato</strong>
+                  <p style="font-size: 0.9rem; color: var(--color-neutral-600);">contato@ligiacardoso.com.br</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="bookingForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="nome" class="form-group__label">Nome Completo *</label>
+              <input type="text" id="nome" class="form-group__input" required placeholder="Ex: Maria Oliveira">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-group__label">E-mail *</label>
+              <input type="email" id="email" class="form-group__input" required placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="telefone" class="form-group__label">Telefone / WhatsApp *</label>
+              <input type="tel" id="telefone" class="form-group__input" required placeholder="(16) 99999-9999">
+            </div>
+
+            <div class="form-group">
+              <label for="modalidade" class="form-group__label">Modalidade de Preferência</label>
+              <select id="modalidade" class="form-group__select">
+                <option value="Online">Atendimento On-line</option>
+                <option value="Presencial">Atendimento Presencial (Araraquara - SP)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem" class="form-group__label">Mensagem (Opcional)</label>
+              <textarea id="mensagem" class="form-group__textarea" placeholder="Conte brevemente o motivo da busca por atendimento..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fa-regular fa-paper-plane"></i> Enviar Solicitação de Agendamento
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          Lígia Cardoso Silveira Rosa | Psicologia Clínica
+        </div>
+        <div style="font-size: 0.9rem;">
+          CRP: 06/73200
+        </div>
+      </div>
+      <div class="footer__legal">
+        &copy; <span id="year"></span> Lígia Cardoso Silveira Rosa. Todos os direitos reservados. Conforme Código de Ética Profissional do Psicólogo.
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
