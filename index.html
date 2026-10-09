@@ -42,6 +42,7 @@
       <nav>
         <ul class="navbar__menu" id="navMenu">
           <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+          <li><a href="#localizacao" class="navbar__link">Clínica</a></li>
           <li><a href="#especialidades" class="navbar__link">Especialidades</a></li>
           <li><a href="#modalidades" class="navbar__link">Modalidades</a></li>
           <li><a href="#como-funciona" class="navbar__link">Como Funciona</a></li>
@@ -133,7 +134,62 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="especialidades">
+    <!-- Nova Seção: Localização da Clínica -->
+    <section class="section section--alt" id="localizacao">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__subtitle">Nossa Estrutura</span>
+          <h2 class="section-header__title">Um ambiente planejado para o seu conforto e privacidade</h2>
+        </header>
+
+        <div class="location__grid">
+          <div class="location__content">
+            <h3 class="location__title">Conheça a Clínica Foco</h3>
+            <p class="location__text">
+              Localizada no coração de Araraquara, a Clínica Foco foi concebida para oferecer um ambiente acolhedor, silencioso e totalmente seguro. Cada detalhe da estrutura foi pensado para proporcionar a máxima tranquilidade, privacidade e bem-estar durante as suas sessões presenciais.
+            </p>
+
+            <ul class="location__features">
+              <li class="location__feature-item">
+                <i class="fa-solid fa-shield-halved location__feature-icon"></i>
+                <div>
+                  <strong>Privacidade e Sigilo</strong>
+                  <p class="location__feature-desc">Ambiente acusticamente isolado para total conforto e confidencialidade.</p>
+                </div>
+              </li>
+              <li class="location__feature-item">
+                <i class="fa-solid fa-couch location__feature-icon"></i>
+                <div>
+                  <strong>Conforto & Acessibilidade</strong>
+                  <p class="location__feature-desc">Recepção aconchegante, salas climatizadas e fácil acesso no centro da cidade.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="location__actions">
+              <a href="https://maps.google.com/?q=Clinica+Foco+Araraquara" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                <i class="fa-solid fa-map-location-dot"></i> Visualizar no Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="location__map-wrapper">
+            <div class="location__map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7411.018517375344!2d-48.17930974999915!3d-21.760542914585876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f13e90c36b11%3A0xe37e50c69917eaab!2sCl%C3%ADnica%20Foco!5e0!3m2!1spt-BR!2sbr!4v1791575092926!5m2!1spt-BR!2sbr" 
+                class="location__iframe"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Localização da Clínica Foco no Google Maps">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="especialidades">
       <div class="container">
         <header class="section-header">
           <span class="section-header__subtitle">Áreas de Atuação</span>
@@ -210,7 +266,7 @@
       </div>
     </section>
 
-    <section class="section" id="modalidades">
+    <section class="section section--alt" id="modalidades">
       <div class="container">
         <header class="section-header">
           <span class="section-header__subtitle">Formatos de Atendimento</span>
@@ -269,7 +325,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="como-funciona">
+    <section class="section" id="como-funciona">
       <div class="container">
         <header class="section-header">
           <span class="section-header__subtitle">Passo a Passo</span>
@@ -298,7 +354,7 @@
       </div>
     </section>
 
-    <section class="section" id="faq">
+    <section class="section section--alt" id="faq">
       <div class="container faq__container">
         <header class="section-header">
           <span class="section-header__subtitle">Perguntas Frequentes</span>
@@ -339,7 +395,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="agendamento">
+    <section class="section" id="agendamento">
       <div class="container">
         <div class="contact__grid">
           <div class="contact__info">
