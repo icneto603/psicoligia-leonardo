@@ -37,4 +37,12 @@
   --box-shadow-soft: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
   --box-shadow-hover: 0 20px 40px -10px rgba(13, 148, 136, 0.15);
   --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --box-shadow-btn-color: rgba(13, 148, 136, 0.45);
 }
+
+/* Links para as imagens Color
+
+https://placehold.co/600x600/e0f2fe/0369a1?text=Ligia+Cardoso+Silveira+Rosa
+https://placehold.co/600x500/f0fdfa/0f766e?text=Consultorio+Araraquara
+
+*/

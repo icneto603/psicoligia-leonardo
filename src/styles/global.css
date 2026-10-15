@@ -1,4 +1,5 @@
-@import url(./design-system.css);
+/* @import url(./design-system.css); */
+@import url(./design-system-gray.css);
 @import url(./reset.css);
 @import url(./components.css);
 

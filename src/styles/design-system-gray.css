@@ -1,0 +1,52 @@
+:root {
+  /* Escala de Cinzas Primária (Tokens de Marca/Ação) */
+  --color-primary-50: #fafafa;
+  --color-primary-100: #f4f4f5;
+  --color-primary-200: #e4e4e7;
+  --color-primary-600: #52525b;
+  --color-primary-700: #3f3f46;
+  --color-primary-800: #27272a;
+  --color-primary-900: #18181b;
+
+  /* Escala de Destaque / Destaques Neutros */
+  --color-accent-100: #e4e4e7;
+  --color-accent-500: #27272a;
+
+  /* Escala Neutra (Superfícies, Bordas e Textos) */
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #f4f4f5;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-600: #71717a;
+  --color-neutral-800: #27272a;
+  --color-neutral-900: #09090b;
+
+  /* Tipografia */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Espaçamentos */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* Tokens de UI e Sombras Neutras */
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  --box-shadow-soft: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+  --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --box-shadow-btn-color: rgba(14, 15, 15, 0.45);
+}
+
+/* Links para as imagens PB
+
+https://placehold.co/600x600/000/fff?text=Ligia+Cardoso+Silveira+Rosa 
+https://placehold.co/600x500/000/fff?text=Consultorio+Araraquara
+
+*/
+
+
